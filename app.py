@@ -43,4 +43,3 @@ st.text(txt)
 st.write("---")
 
 st.page_link('pages/plotly_chart.py', label='Iris graph', icon="🌸")
-
