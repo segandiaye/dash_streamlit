@@ -1,5 +1,5 @@
 matplotlib==3.5.3
-numpy==1.23.4
-plotly==5.9.0
-streamlit==1.11.1
+numpy==1.26.4
+plotly==6.2.0
+streamlit==1.40.1
 streamlit_extras==0.7.5
