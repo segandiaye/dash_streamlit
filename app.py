@@ -2,14 +2,27 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 import plotly.express as px
+import time
 
 
 st.title("This is my streamlit app")
 
-if st.button("Click me please"):
-    st.balloons()
-    st.snow()
+st.write("---")
 
+if st.button("Release ballons in the air"):
+    progress_text = "Inflating ballons. Please wait..."
+    my_bar = st.progress(0, text=progress_text)
+    for percent_complete in range(100):
+        time.sleep(0.01)
+        my_bar.progress(percent_complete + 1, text=progress_text)
+    time.sleep(1)
+    my_bar.empty()
+    st.balloons()
+
+
+st.write("---")
+
+st.text("Visualize y=x**2 function")
 
 lower_bound, higher_bound = st.slider('choose range to plot', min_value=-10, max_value=10, value=(-5, 5))
 
@@ -22,17 +35,11 @@ def plot_x2(lower_bound, higher_bound):
 
 st.pyplot(plot_x2(lower_bound, higher_bound))
 
+st.write("---")
 
 txt = st.text_input("Type here")
-
 st.text(txt)
 
-# df = px.data.iris()
+st.write("---")
 
-# fig = px.scatter(df, x="sepal_width", y="sepal_length", 
-#                 color="species", size='petal_length', 
-#                 hover_data=['petal_width'])
-
-# st.plotly_chart(fig)
-
-st.page_link('pages/plotly_chart.py')
+st.page_link('pages/plotly_chart.py', label='Iris graph', icon="🌸")
