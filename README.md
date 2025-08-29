@@ -1,6 +1,13 @@
-# dash_streamlit
-Artefact tuto deployment with streamlit | heroku
+# Hand on streamlit
 
-URL = https://artefact-first-deployment.streamlit.app/
+Artifact Tutorial: Deployment with Streamlit.
 
-streamlit.io
+# Deployment
+
+Go to [streamlit.io](streamlit.io)
+
+# My Deployment Example
+
+[demo](https://artefact-first-deployment.streamlit.app/)
+
+
