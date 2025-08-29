@@ -1,6 +1,6 @@
 # Hand on streamlit
 
-Artifact Tutorial: Deployment with Streamlit.
+A simple streamlit, sckikit-learn, matplotlib example created during my data science internship at [Artefact School](https://schoolofdata.artefact.com/).
 
 # Deployment
 
