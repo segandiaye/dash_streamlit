@@ -1,6 +1,6 @@
 # Hand on streamlit
 
-A simple streamlit, sckikit-learn, matplotlib example created during my data science internship at [Artefact School](https://schoolofdata.artefact.com/).
+A simple example using Streamlit, scikit-learn, and Matplotlib, created during my data science internship at [Artefact School](https://schoolofdata.artefact.com/).
 
 # Deployment
 
